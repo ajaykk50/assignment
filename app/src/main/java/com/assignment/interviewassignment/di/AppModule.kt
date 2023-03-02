@@ -26,13 +26,6 @@ object AppModule {
     fun provideDefaultArticlesRepository(api: productService) =
         ProductsRepositoryImpl(api) as ProductsRepository
 
-//    @Singleton
-//    @Provides
-//    fun providePiccassoInstance(
-//        @ApplicationContext context: Context
-//    ) = Picasso.get().load().error(R.drawable.ic_image)
-
-
     @Singleton
     @Provides
     fun provideNytApi(): productService {
